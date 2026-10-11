@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contacto | Constructora Ficticia</title>
+  <meta name="description" content="Contacta a Constructora Ficticia para consultar por nuestros servicios y proyectos.">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Iconos FontAwesome (Necesario para que se vean los íconos de contacto y redes sociales) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <!-- Tu hoja de estilos principal -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Constructora Ficticia, inicio">
+        <span class="brand-mark">F</span>
+        <span class="brand-name">Constructora <span>Ficticia</span><small>Construcción e ingeniería</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="mainNav">
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a class="nav-cta active" href="contacto.html" aria-current="page">Cotizar proyecto ↗</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- HERO DE CONTACTO -->
+<section class="page-hero section-light">
+  <div class="container page-hero-content" style="padding: 4rem 0;">
+    <span class="section-label">HABLEMOS DE TU PROYECTO</span>
+    <h1>Estamos aquí para <span>ayudarte.</span></h1>
+    <p style="max-width: 600px; margin-top: 1rem;">
+      ¿Tienes alguna consulta o quieres conocer más sobre nuestros servicios?
+      Escríbenos y conversemos sobre tu próximo proyecto.
+    </p>
+  </div>
+</section>
+
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <section class="contact-section">
+      <div class="container">
+        
+        <!-- Usamos contact-layout como indica tu CSS -->
+        <div class="contact-layout">
+
+          <!-- COLUMNA IZQUIERDA: INFORMACIÓN -->
+          <aside class="contact-info">
+            <div class="contact-info-heading">
+              <h3>Información de contacto</h3>
+              <p>Encuentra nuestros datos y conoce nuestros canales de contacto directos.</p>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Teléfono</h4>
+                <p>+56 9 1234 5678</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Correo electrónico</h4>
+                <p>contacto@constructoraficticia.cl</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Ubicación</h4>
+                <p>Laja, Región del Biobío, Chile</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+              <div>
+                <h4>Horario de atención</h4>
+                <p>Lunes a viernes<br>09:00 a 18:00 hrs.</p>
+              </div>
+            </div>
+
+            <!-- REDES SOCIALES -->
+            <div class="contact-social">
+              <h4>Síguenos en redes sociales</h4>
+              <div class="social-links">
+                <a href="#" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- COLUMNA DERECHA: FORMULARIO -->
+          <div class="contact-form-wrapper">
+            <div class="contact-form-heading">
+              <span class="section-tag">ESCRÍBENOS</span>
+              <h3>Envíanos tu consulta</h3>
+              <p>Completa el formulario y cuéntanos en qué podemos ayudarte.</p>
+            </div>
+
+            <form action="#" method="post" class="contact-form">
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre completo</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="form-group">
+                  <label for="correo">Correo electrónico</label>
+                  <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefono">Teléfono</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678">
+                </div>
+                <div class="form-group">
+                  <label for="asunto">Motivo de consulta</label>
+                  <select id="asunto" name="asunto" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="construccion">Construcción</option>
+                    <option value="remodelacion">Remodelación</option>
+                    <option value="presupuesto">Presupuesto</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+              </div>
+
+              <button type="submit" class="submit-button">
+                Enviar consulta <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              
+              <p class="form-disclaimer" style="text-align: center; margin-top: 15px;">
+                <i class="fa-solid fa-lock"></i> Tus datos se utilizarán para responder tu consulta.
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">F</span>
+            <span class="brand-name">Constructora <span>Ficticia</span><small>Construcción e ingeniería</small></span>
+          </a>
+          <p>Soluciones de construcción y remodelación enfocadas en la planificación, la calidad del trabajo y la atención al cliente.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Navegación</h3>
+          <div class="footer-links">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Áreas de trabajo</h3>
+          <div class="footer-links">
+            <span>Obra gruesa</span><span>Remodelaciones</span><span>Administración de obra</span><span>Mantenimiento</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>© 2026 Constructora Ficticia. Todos los derechos reservados. | Construcción con planificación y compromiso. | Diseñado por Panda Code</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu.js" defer></script>
+</body>
+</html>
